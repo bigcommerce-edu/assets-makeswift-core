@@ -42,3 +42,5 @@ const BlogList = ({
 ```shell
 npx makeswift@latest init --template basic-typescript-pages
 ```
+
+[Next](../Module03_CustomComponents/01_MakeswiftComponentApproach.md)

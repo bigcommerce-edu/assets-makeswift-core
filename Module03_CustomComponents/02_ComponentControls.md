@@ -235,3 +235,5 @@ runtime.registerComponent(
   }
 )
 ```
+
+[Next](./06_BestPractices.md)

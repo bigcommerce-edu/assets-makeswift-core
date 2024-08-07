@@ -4,7 +4,7 @@
 
 ```shell
 corepack enable pnpm
-pnpx makeswift@latest init --use-pnpm
+pnpx makeswift@latest init
 ```
 
 ## Examine the Local Installation
@@ -14,3 +14,5 @@ pnpx makeswift@latest init --use-pnpm
 ```shell
 pnpm run dev
 ```
+
+[Next](../Module02_MakeswiftArchitecture/01_ReactAndNextJs.md)

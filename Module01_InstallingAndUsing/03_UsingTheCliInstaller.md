@@ -10,10 +10,16 @@ npx makeswift@latest init
 
 ### Choose a Package Manager
 
-**Package manager option:**
+```shell
+yarn dlx makeswift@latest init
+```
 
 ```shell
-npx makeswift@latest init --use-pnpm
+pnpx makeswift@latest init
+```
+
+```shell
+bunx makeswift@latest init
 ```
 
 ### Variant Code Examples
@@ -39,3 +45,5 @@ npx makeswift@latest init --example basic-typescript-pages
 ```shell
 npx degit https://github.com/makeswift/makeswift/examples/basic-typescript
 ```
+
+[Next](./04_Lab_SetUpMakeswift.md)

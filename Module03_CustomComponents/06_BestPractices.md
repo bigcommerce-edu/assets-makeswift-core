@@ -94,3 +94,5 @@ const MyComponent = forwardRef((
   // ... use textColor in JSX
 })
 ```
+
+[Next](../Module04_IntegratingData/02_MakeswiftAndBigCommerce.md)
