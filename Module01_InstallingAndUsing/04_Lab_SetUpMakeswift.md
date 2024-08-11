@@ -3,8 +3,7 @@
 ## Run the Installer
 
 ```shell
-corepack enable pnpm
-pnpx makeswift@latest init
+npx makeswift@latest init
 ```
 
 ## Examine the Local Installation
@@ -12,7 +11,7 @@ pnpx makeswift@latest init
 **Start the dev server:**
 
 ```shell
-pnpm run dev
+npm run dev
 ```
 
 [Next](../Module02_MakeswiftArchitecture/01_ReactAndNextJs.md)

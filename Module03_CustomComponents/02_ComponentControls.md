@@ -4,7 +4,7 @@
 
 **Registration example:**
 
-```javascript
+```typescript
 import { TextInput } from '@makeswift/runtime/controls'
 
 runtime.registerComponent(
@@ -24,7 +24,7 @@ runtime.registerComponent(
 
 **Receiving props example:**
 
-```javascript
+```typescript
 export const MyComponent = forwardRef(
   (
     { title }: { title: string },
@@ -41,7 +41,7 @@ export const MyComponent = forwardRef(
 
 **Registration with checkbox and select props:**
 
-```javascript
+```typescript
 import { Checkbox, Select } from '@makeswift/runtime/controls'
 
 runtime.registerComponent(
@@ -72,7 +72,7 @@ runtime.registerComponent(
 
 **Registration example:**
 
-```javascript
+```typescript
 import { Style } from '@makeswift/runtime/controls'
 
 runtime.registerComponent(
@@ -91,7 +91,7 @@ runtime.registerComponent(
 
 **Style prop usage:**
 
-```javascript
+```typescript
 type Props = {
   className: string,
 }
@@ -114,7 +114,7 @@ export const MyComponent = forwardRef(
 
 **Registration example:**
 
-```javascript
+```typescript
 import { RichText } from '@makeswift/runtime/controls'
 
 runtime.registerComponent(
@@ -133,7 +133,7 @@ runtime.registerComponent(
 
 **Rendering RichText props:**
 
-```javascript
+```typescript
 type Props = {
   body: ReactNode
 }
@@ -159,7 +159,7 @@ export const MyComponent = forwardRef(
 
 **Registration example:**
 
-```javascript
+```typescript
 import { Slot } from '@makeswift/runtime/controls'
 
 import { runtime } from '@/lib/makeswift/runtime'
@@ -178,7 +178,7 @@ runtime.registerComponent(
 
 **Rendering Slot props:**
 
-```javascript
+```typescript
 type Props = {
   body: ReactNode
 }
@@ -204,7 +204,7 @@ export const MyComponent = forwardRef(
 
 **Registration example:**
 
-```javascript
+```typescript
 import { Checkbox, List, Shape, TextInput } from '@makeswift/runtime/controls'
 
 runtime.registerComponent(

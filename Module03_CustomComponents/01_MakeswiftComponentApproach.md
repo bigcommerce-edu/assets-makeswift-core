@@ -4,7 +4,7 @@
 
 **Example:**
 
-```javascript
+```typescript
 import { Ref, forwardRef } from 'react'
 
 export const BlogList = forwardRef(
@@ -24,14 +24,14 @@ export const BlogList = forwardRef(
 
 **Example:**
 
-```javascript
+```typescript
 type Props = {
   className?: string
   blogItems: {
     title: string
     author: string
     likeCount: number
-  }
+  }[]
 }
 
 export const BlogList = forwardRef(
