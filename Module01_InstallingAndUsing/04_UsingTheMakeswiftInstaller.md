@@ -1,4 +1,4 @@
-# Using the CLI Installer
+# Using the Makeswift Installer
 
 ## The Installation Process
 
@@ -36,6 +36,12 @@ npx makeswift@latest init --template basic-typescript-pages
 npx makeswift@latest init --example basic-typescript-pages
 ```
 
+### The BigCommerce Template
+
+```shell
+npx makeswift@latest init --template bigcommerce
+```
+
 ## Edge Scenarios
 
 ### Can I Just Get the Code?
@@ -46,4 +52,4 @@ npx makeswift@latest init --example basic-typescript-pages
 npx degit https://github.com/makeswift/makeswift/examples/basic-typescript
 ```
 
-[Next](./04_Lab_SetUpMakeswift.md)
+[Next](./05_Lab_SetUpMakeswift.md)
