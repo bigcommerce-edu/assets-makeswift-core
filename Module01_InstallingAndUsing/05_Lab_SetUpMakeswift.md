@@ -5,14 +5,15 @@
 ### Run the Installer
 
 ```shell
-npm create @bigcommerce/catalyst@latest -- --integration=makeswift
+corepack enable pnpm
+npm create @bigcommerce/catalyst@latest -- --gh-ref upstream/integrations/makeswift
 ```
 
 ### Run the Dev Server
 
 ```shell
 cd /path/to/catalyst/project
-npm run dev
+pnpm run dev
 ```
 
 ## Connect Makeswift
@@ -28,7 +29,7 @@ MAKESWIFT_SITE_API_KEY={Makeswift API KEY}
 **Start the dev server:**
 
 ```shell
-npm run dev
+pnpm run dev
 ```
 
 [Next](../Module02_MakeswiftArchitecture/01_ReactAndNextJs.md)

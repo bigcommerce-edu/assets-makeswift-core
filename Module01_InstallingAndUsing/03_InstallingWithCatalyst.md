@@ -3,7 +3,7 @@
 ## The Installation Process
 
 ```shell
-npm create @bigcommerce/catalyst@latest -- --integration=makeswift
+npm create @bigcommerce/catalyst@latest -- --gh-ref upstream/integrations/makeswift
 ```
 
 ## Connecting a BigCommerce Store
