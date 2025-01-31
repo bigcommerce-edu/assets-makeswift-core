@@ -236,4 +236,4 @@ runtime.registerComponent(
 )
 ```
 
-[Next](./07_BestPractices.md)
+[Next](./04_BuiltInElements.md)

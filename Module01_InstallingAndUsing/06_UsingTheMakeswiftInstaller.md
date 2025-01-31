@@ -36,12 +36,6 @@ npx makeswift@latest init --template basic-typescript-pages
 npx makeswift@latest init --example basic-typescript-pages
 ```
 
-### The BigCommerce Template
-
-```shell
-npx makeswift@latest init --template bigcommerce
-```
-
 ## Edge Scenarios
 
 ### Can I Just Get the Code?
@@ -52,4 +46,4 @@ npx makeswift@latest init --template bigcommerce
 npx degit https://github.com/makeswift/makeswift/examples/basic-typescript
 ```
 
-[Next](./05_Lab_SetUpMakeswift.md)
+[Next](../Module02_MakeswiftArchitecture/01_ReactAndNextJs.md)

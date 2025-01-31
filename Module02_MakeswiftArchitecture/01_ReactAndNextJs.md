@@ -33,14 +33,4 @@ const BlogList = ({
 }
 ```
 
-## Next.js
-
-### App vs Pages Router
-
-**Installing with Pages router:**
-
-```shell
-npx makeswift@latest init --template basic-typescript-pages
-```
-
 [Next](../Module03_CustomComponents/01_MakeswiftComponentApproach.md)
