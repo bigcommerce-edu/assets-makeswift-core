@@ -97,6 +97,56 @@ runtime.registerComponent(FancyBox, {
 });
 ```
 
+**The wrapper component:**
+
+```typescript
+import { Component } from '~/lib/makeswift/component';
+
+...
+
+const MyPage = async () => {
+  return (
+    <section ...>
+      <div ...>
+        <div>Non-editable component page content</div>
+      </div>
+      <div>
+        <Component
+          label="Global Fancy Box"
+          snapshotId='global-fancy-box'
+          type="fancy-box"
+        />
+      </div>
+    </section>
+  );
+};
+```
+
+## Editable Regions with Slot
+
+**Editable region example:**
+
+```typescript
+import { Slot } from '@makeswift/runtime/next';
+import { getComponentSnapshot } from '~/lib/makeswift/client';
+
+...
+
+const MyPage = async () => {
+  const regionSnapshot = await getComponentSnapshot('my-region');
+
+  return (
+    <section ...>
+      ...
+      <Slot fallback={<div>Fallback for slot ...</div>}
+        label="My Region" 
+        snapshot={regionSnapshot}
+      />
+    </section>
+  );
+};
+```
+
 ## Mixing Prop Sources
 
 **Multiple registrations with hard-coded props:**
@@ -145,6 +195,7 @@ runtime.registerComponent((propsFromControls) => {
 const FancyBox = (
   {
     className,
+    borderColor,
     cards,
     extraContent
   }: {
@@ -239,5 +290,3 @@ const MyPage = async () => {
   );
 };
 ```
-
-[Next](./05_BestPractices.md)

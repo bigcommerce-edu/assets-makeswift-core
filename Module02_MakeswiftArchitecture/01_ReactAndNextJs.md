@@ -5,32 +5,49 @@
 **React Example:**
 
 ```javascript
-const BlogList = ({
-  title,
-  articles
-}) => {
-  const onLikeClick = async (id) => {
-    await fetch("/likeArticle", {
-      method: "POST",
-      body: JSON.stringify({ id });
-    });
-  };
+function BlogPost({
+  article,
+  showTags
+}) {
+  {/* State to track a user's interaction */}
+  const [liked, setLiked] = useState(false);
+
+  const activateLike = () => {
+    // ... send request
+    setLiked(true);
+  }
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <ul>
-        {articles.map(article => (
-          <li><a href="{article.url}">
-            <h2>{article.title}</h2>
-            <div>{article.summary}</div>
-            <button onClick={() => onLikeClick(article.id)}>Like</button>
-          </a></li>
+    <article>
+      {/* Outputting a simple object value */}
+      <h1>{article.title}</h1>
+
+      <div>
+        {article.body}
+      </div>
+
+      {/* Using comparison for an "IF" */}
+      {showTags && (article.tags.length > 0) && (
+        <ul>
+          {/* A simple array function to loop over a value */}
+          {article.tags.map(tag => (
+            <li>{tag}</li>
+          ))}
+        </ul>
+      )}
+
+      <div>
+        {/* Ternary operators work as well
+        This time examining state for what to output. */}
+        {liked ? (
+          <span>You liked this</span>
+        ) : (
+          <button onClick={activateLike}>Like</button>
         )}
-      </ul>
-    </div>
+      </div>
+    </article>
   );
 }
 ```
 
-[Next](../Module03_CustomComponents/01_MakeswiftComponentApproach.md)
+[Next](../Module03_BuildingComponents/01_MakeswiftComponentApproach.md)

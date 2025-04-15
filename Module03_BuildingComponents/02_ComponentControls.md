@@ -5,10 +5,10 @@
 **Registration example:**
 
 ```typescript
-import { TextInput } from '@makeswift/runtime/controls'
+import { TextInput } from '@makeswift/runtime/controls';
 
 runtime.registerComponent(
-  lazy(() => import('./MyComponent')),
+  MyComponent,
   {
     type: 'my-component',
     label: 'My Component',
@@ -19,7 +19,7 @@ runtime.registerComponent(
       }),
     },
   }
-)
+);
 ```
 
 **Receiving props example:**
@@ -42,10 +42,10 @@ export const MyComponent = forwardRef(
 **Registration with checkbox and select props:**
 
 ```typescript
-import { Checkbox, Select } from '@makeswift/runtime/controls'
+import { Checkbox, Select } from '@makeswift/runtime/controls';
 
 runtime.registerComponent(
-  lazy(() => import('./MyComponent')),
+  MyComponent,
   {
     type: "my-component",
     label: "My Component",
@@ -65,7 +65,7 @@ runtime.registerComponent(
       }),
     },
   }
-)
+);
 ```
 
 ## The Style Control
@@ -73,10 +73,10 @@ runtime.registerComponent(
 **Registration example:**
 
 ```typescript
-import { Style } from '@makeswift/runtime/controls'
+import { Style } from '@makeswift/runtime/controls';
 
 runtime.registerComponent(
-  lazy(() => import('./MyComponent')),
+  MyComponent,
   {
     type: "my-component",
     label: "My Component",
@@ -86,7 +86,7 @@ runtime.registerComponent(
       }),
     },
   }
-)
+);
 ```
 
 **Style prop usage:**
@@ -115,10 +115,10 @@ export const MyComponent = forwardRef(
 **Registration example:**
 
 ```typescript
-import { RichText } from '@makeswift/runtime/controls'
+import { RichText } from '@makeswift/runtime/controls';
 
 runtime.registerComponent(
-  lazy(() => import('./MyComponent')),
+  MyComponent,
   {
     type: "my-component",
     label: "My Component",
@@ -128,7 +128,7 @@ runtime.registerComponent(
       }),
     },
   }
-)
+);
 ```
 
 **Rendering RichText props:**
@@ -160,12 +160,12 @@ export const MyComponent = forwardRef(
 **Registration example:**
 
 ```typescript
-import { Slot } from '@makeswift/runtime/controls'
+import { Slot } from '@makeswift/runtime/controls';
 
-import { runtime } from '@/lib/makeswift/runtime'
+import { runtime } from '@/lib/makeswift/runtime';
 
 runtime.registerComponent(
-  lazy(() => import('./MyComponent')),
+  MyComponent,
   {
     type: "my-component",
     label: "My Component",
@@ -173,7 +173,7 @@ runtime.registerComponent(
       body: Slot(),
     },
   }
-)
+);
 ```
 
 **Rendering Slot props:**
@@ -200,23 +200,25 @@ export const MyComponent = forwardRef(
 )
 ```
 
-## The Shape Control
+## The Group Control
 
 **Registration example:**
 
 ```typescript
-import { Checkbox, List, Shape, TextInput } from '@makeswift/runtime/controls'
+import { Checkbox, Group, List, TextInput } from '@makeswift/runtime/controls';
 
 runtime.registerComponent(
-  lazy(() => import('./MyComponent')),
+  MyComponent,
   {
     type: "my-component",
     label: "My Component",
     props: {
       items: List({
         label: "Items",
-        type: Shape({
-          type: {
+        type: Group({
+          label: "Item properties",
+          preferredLayout: Group.Layout.Inline,
+          props: {
             showItem: Checkbox({
               label: "Show Item",
               defaultValue: true,
@@ -233,7 +235,7 @@ runtime.registerComponent(
       }),
     },
   }
-)
+);
 ```
 
-[Next](./04_BuiltInElements.md)
+[Next](./04_BestPractices.md)

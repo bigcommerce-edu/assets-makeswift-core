@@ -20,6 +20,24 @@ export const BlogList = forwardRef(
 )
 ```
 
+**Passing a ref:**
+
+```typescript
+import { useRef } from 'react';
+
+export default function MyComponent() {
+  const blogListRef = useRef(null);
+
+  const someInteractiveFunction = () => {
+    // Use blogListRef to access a DOM element
+  }
+
+  return (
+    <BlogList ref={inputRef} />
+  )
+}
+```
+
 ## Props and Controls
 
 **Example:**

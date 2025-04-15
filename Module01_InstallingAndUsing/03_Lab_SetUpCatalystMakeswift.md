@@ -5,7 +5,7 @@
 ### Run the Installer
 
 ```shell
-corepack enable pnpm && pnpm create @bigcommerce/catalyst@0.20.0 --gh-ref @bigcommerce/catalyst-core@makeswift-1.0.0-rc.8
+corepack enable pnpm && pnpm create @bigcommerce/catalyst@0.21.0 --gh-ref @bigcommerce/catalyst-core@makeswift-1.0.0-rc.11
 ```
 
 ### Run the Dev Server
@@ -15,4 +15,4 @@ cd /path/to/catalyst/project
 pnpm run dev
 ```
 
-[Next](./06_UsingTheMakeswiftInstaller.md)
+[Next](../Module02_MakeswiftArchitecture/01_ReactAndNextJs.md)
