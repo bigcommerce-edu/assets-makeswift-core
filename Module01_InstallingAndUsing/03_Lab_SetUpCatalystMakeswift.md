@@ -5,7 +5,7 @@
 ### Run the Installer
 
 ```shell
-corepack enable pnpm && pnpm create @bigcommerce/catalyst@0.21.0 --gh-ref @bigcommerce/catalyst-core@makeswift-1.0.0-rc.11
+corepack enable pnpm && pnpm create @bigcommerce/catalyst@0.22.0 --gh-ref @bigcommerce/catalyst-core@makeswift-1.0.0-rc.11
 ```
 
 ### Run the Dev Server
