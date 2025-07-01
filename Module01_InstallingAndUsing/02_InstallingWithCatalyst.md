@@ -5,7 +5,7 @@
 **Installing the latest release:**
 
 ```shell
-corepack enable pnpm && pnpm create @bigcommerce/catalyst@latest --gh-ref @bigcommerce/catalyst-core@makeswift-canary
+corepack enable pnpm && pnpm create @bigcommerce/catalyst@latest --gh-ref @bigcommerce/catalyst-makeswift@latest
 ```
 
 ### The Makeswift API Key
