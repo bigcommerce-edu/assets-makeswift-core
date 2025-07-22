@@ -1,6 +1,6 @@
-# Makeswift Essentials Code Assets
+# Makeswift Core Code Assets
 
-The code snippets in this package are assets for the BigCommerce Makeswift Essentials training course.
+The code snippets in this package are assets for the BigCommerce Makeswift Core training course.
 
 ## Example Image Sources
 
