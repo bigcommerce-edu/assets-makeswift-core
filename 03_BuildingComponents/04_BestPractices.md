@@ -94,5 +94,3 @@ const MyComponent = forwardRef((
   // ... use textColor in JSX
 })
 ```
-
-[Next](../Module04_HandsOnLabs/01_ProjectSetup.md)

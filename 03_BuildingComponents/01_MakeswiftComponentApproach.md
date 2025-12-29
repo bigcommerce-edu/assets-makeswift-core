@@ -67,5 +67,3 @@ export const BlogList = forwardRef(
   }
 )
 ```
-
-[Next](./02_ComponentControls.md)

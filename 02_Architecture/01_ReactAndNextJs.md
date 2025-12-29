@@ -49,5 +49,3 @@ function BlogPost({
   );
 }
 ```
-
-[Next](../Module03_BuildingComponents/01_MakeswiftComponentApproach.md)

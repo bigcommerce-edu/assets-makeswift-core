@@ -237,5 +237,3 @@ runtime.registerComponent(
   }
 );
 ```
-
-[Next](./04_BestPractices.md)

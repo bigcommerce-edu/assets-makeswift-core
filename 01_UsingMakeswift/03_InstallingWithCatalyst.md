@@ -15,5 +15,3 @@ corepack enable pnpm && pnpm create @bigcommerce/catalyst@latest --gh-ref @bigco
 ```
 MAKESWIFT_SITE_API_KEY={Makeswift API KEY}
 ```
-
-[Next](./03_Lab_SetUpCatalystMakeswift.md)
