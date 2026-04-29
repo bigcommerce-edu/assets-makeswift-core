@@ -2,7 +2,7 @@
 
 * [Makeswift](https://www.makeswift.com/)
 * [Makeswift Developer Docs](https://docs.makeswift.com/developer/quickstart)
-* [Makeswift Product Documentation](https://docs.makeswift.com/product/quickstart)
+* [Makeswift Product Documentation](https://docs.makeswift.com/product/docs/getting-started/quickstart)
 * [React](https://react.dev/)
 * [Next.js&nbsp;](https://nextjs.org/)
 * [Typescript](https://www.typescriptlang.org/)
