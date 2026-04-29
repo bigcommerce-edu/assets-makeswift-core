@@ -7,6 +7,6 @@
 * [Next.js&nbsp;](https://nextjs.org/)
 * [Typescript](https://www.typescriptlang.org/)
 * [Tailwind](https://tailwindcss.com/docs/installation)
-* [Catalyst](https://developer.bigcommerce.com/docs/storefront/catalyst)
+* [Catalyst](https://docs.bigcommerce.com/developer/docs/storefront/catalyst)
 * [Catalyst on GitHub](https://github.com/bigcommerce/catalyst)
 * [Creating a Catalyst Storefront](https://support.bigcommerce.com/s/article/Creating-a-Catalyst-Storefront)
