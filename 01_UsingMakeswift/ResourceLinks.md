@@ -1,7 +1,7 @@
 # Using Makeswift - Resource Links
 
 * [Makeswift](https://www.makeswift.com/)
-* [Makeswift Developer Docs](https://docs.makeswift.com/developer/quickstart)
+* [Makeswift Developer Docs](https://docs.makeswift.com/developer/docs/get-started/quickstart)
 * [Makeswift Product Documentation](https://docs.makeswift.com/product/docs/getting-started/quickstart)
 * [React](https://react.dev/)
 * [Next.js&nbsp;](https://nextjs.org/)
