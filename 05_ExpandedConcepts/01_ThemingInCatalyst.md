@@ -33,18 +33,21 @@ Given the existing group name and the transformation of our _titleSize_ prop nam
 
 
 ```jsx {7-9} copy
-<Link ...>
-  <span
-    className={clsx(
+  <div className="mt-2 ...">
+    <div className="flex-1 ...">
+      <span
+        className={clsx(
+                ...
+        )}
+        style={{
+          'fontSize': 'var(--product-card-title-size, 20px)',
+           }}
+        >
+        {title}
+      </span>
       ...
-    )}
-
-    style={{
-      'fontSize': 'var(--product-card-title-size, 20px)',
-    }}
-  >
-    {title}
-  </span>
+      </div>
+    </div>
   ...
 ```
 

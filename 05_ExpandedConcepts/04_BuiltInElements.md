@@ -147,6 +147,26 @@ const MyPage = async () => {
 };
 ```
 
+**The Slot wrapper:**
+
+```jsx
+import { Slot } from '~/lib/makeswift/slot';
+
+...
+
+const MyPage = async () => {
+  return (
+    <section ...>
+      ...
+      <Slot
+        label="My Region"
+        snapshotId="my-region"
+      />
+    </section>
+  );
+};
+```
+
 ## Mixing Prop Sources
 
 **Multiple registrations with hard-coded props:**
