@@ -10,3 +10,4 @@
 * [Catalyst](https://docs.bigcommerce.com/developer/docs/storefront/catalyst)
 * [Catalyst on GitHub](https://github.com/bigcommerce/catalyst)
 * [Creating a Catalyst Storefront](https://support.bigcommerce.com/s/article/Creating-a-Catalyst-Storefront)
+* [Create Private Token (Storefront API Tokens)](https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/private-api-token/create-private-token)
