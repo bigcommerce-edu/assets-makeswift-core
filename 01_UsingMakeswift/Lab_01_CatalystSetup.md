@@ -72,7 +72,7 @@ pnpm install
 
 ```bash copy
 cd /path/to/working/directory
-pnpm dlx @bigcommerce/create-catalyst@1.0.1 init
+pnpm dlx @bigcommerce/create-catalyst@latest init
 ```
 
 You will eventually be presented with the BigCommerce device authorization URL - `https://login.bigcommerce.com/device/connect` - and a unique code.
