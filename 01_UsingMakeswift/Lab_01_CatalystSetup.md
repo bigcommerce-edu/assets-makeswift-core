@@ -45,47 +45,50 @@ Note that you can return to the storefront overview page at any time by navigati
 
 Rather than start your custom code from scratch, you’ll be starting from a Catalyst codebase that already has certain boilerplate in place, in preparation for subsequent labs.
 
-1. **Run** the following command, replacing the path to the working directory with your own path.
-
+1. **Install** `degit`.
 
 ```bash copy
-corepack enable pnpm && pnpm dlx create-next-app@latest -e https://github.com/bigcommerce-edu/lab-catalyst-makeswift-faqs/tree/e-makeswift-start /path/to/working/directory
+npm install -g degit
 ```
 
-**Troubleshooting**
+2. **Run** the following command, replacing the path to the working directory with your own path.
 
-_The pnpm command is unrecognized._
-
-In some environments where file permissions are highly restricted, you may need to prepend `corepack` to the use of `pnpm` commands (for example, `corepack pnpm dlx create-next-app@latest ...`)
-
-_I receive interactive prompts._
-
-The standard interactive flow for creating a new Next.js app will be initiated if the `-e` option isn’t recognized to provision from an existing “example” project. A brand new Next.js project isn’t what we’re after, so try manually cloning the starting state of the project repo:
 
 ```bash copy
-git clone --branch e-catalyst-start git@github.com:bigcommerce-edu/lab-catalyst-makeswift-faqs.git /path/to/working/directory
-cd /path/to/working/directory
-pnpm install
+degit https://github.com/bigcommerce-edu/lab-catalyst-makeswift-faqs#e-makeswift-start /path/to/catalyst/project
 ```
 
-2. **Run** the following commands.
+3. **Navigate** to the new project working directory.
 
 ```bash copy
-cd /path/to/working/directory
-pnpm dlx @bigcommerce/create-catalyst@latest init
+cd /path/to/catalyst/project
+```
+
+4. **Initialize** a Git repository for your project.
+
+```bash copy
+git init
+git add .
+git commit -m "Initial project files"
+```
+
+5. **Run** the following command.
+
+```bash copy
+pnpm catalyst channel link
 ```
 
 You will eventually be presented with the BigCommerce device authorization URL - `https://login.bigcommerce.com/device/connect` - and a unique code.
 
-3. **Press Enter** or manually **browse** to the given URL and **log into** your BigCommerce account.
-4. If you have multiple stores associated with your account, **choose** the store you want to associate with your Catalyst project.
-5. **Enter** the code from your command line output, and **click** "Next."
-6. **Allow** the required permissions.
+6. **Press Enter** or manually **browse** to the given URL and **log into** your BigCommerce account.
+7. If you have multiple stores associated with your account, **choose** the store you want to associate with your Catalyst project.
+8. **Enter** the code from your command line output, and **click** "Next."
+9. **Allow** the required permissions.
 
 With authorization completed, back at the command line, there will be new installation steps to complete.
 
-7. **Respond** to the prompt "Would you like to create a new channel?" with "No."
-8. **Select** the storefront channel you previously created in the control panel.
+10. **Respond** to the prompt "Would you like to create a new channel?" with "No."
+11. **Select** the storefront channel you previously created in the control panel.
 
 The completion of the installation may take a few minutes. The installer will install the Catalyst code files into your local project, install all `npm` dependencies, and configure your store information and credentials.
 
@@ -102,6 +105,12 @@ cd /path/to/catalyst/project
 ```bash copy
 pnpm run dev
 ```
+
+**Troubleshooting**
+
+_The pnpm command is unrecognized._
+
+In some environments where file permissions are highly restricted, you may need to prepend `corepack` to the use of `pnpm` commands (for example, `corepack pnpm dlx create-next-app@latest ...`)
 
 3. **Browse** to the URL displayed in the command line output. (Usually `http://localhost:3000`)
 
