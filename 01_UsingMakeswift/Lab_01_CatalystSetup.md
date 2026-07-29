@@ -72,7 +72,13 @@ git add .
 git commit -m "Initial project files"
 ```
 
-5. **Run** the following command.
+5. **Install** the project dependencies.
+
+```bash copy
+corepack enable pnpm && pnpm install
+```
+
+6. **Run** the following command.
 
 ```bash copy
 pnpm catalyst channel link
@@ -80,15 +86,15 @@ pnpm catalyst channel link
 
 You will eventually be presented with the BigCommerce device authorization URL - `https://login.bigcommerce.com/device/connect` - and a unique code.
 
-6. **Press Enter** or manually **browse** to the given URL and **log into** your BigCommerce account.
-7. If you have multiple stores associated with your account, **choose** the store you want to associate with your Catalyst project.
-8. **Enter** the code from your command line output, and **click** "Next."
-9. **Allow** the required permissions.
+7. **Press Enter** or manually **browse** to the given URL and **log into** your BigCommerce account.
+8. If you have multiple stores associated with your account, **choose** the store you want to associate with your Catalyst project.
+9. **Enter** the code from your command line output, and **click** "Next."
+10. **Allow** the required permissions.
 
 With authorization completed, back at the command line, there will be new installation steps to complete.
 
-10. **Respond** to the prompt "Would you like to create a new channel?" with "No."
-11. **Select** the storefront channel you previously created in the control panel.
+11. **Respond** to the prompt "Would you like to create a new channel?" with "No."
+12. **Select** the storefront channel you previously created in the control panel.
 
 The completion of the installation may take a few minutes. The installer will install the Catalyst code files into your local project, install all `npm` dependencies, and configure your store information and credentials.
 
