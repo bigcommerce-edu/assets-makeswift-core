@@ -53,3 +53,5 @@ Given the existing group name and the transformation of our _titleSize_ prop nam
 
 3. In the location bar of the Makeswift builder, **enter** the URL path of a valid category page.
 4. **Select** the "Site Theme" element in the Elements panel and try **editing** the new "Title font size" property. **Observe** the effects on the cards in the product list.
+
+**In Stencil:** a similar "Component Styles" element appears in the Elements panel, for global configuration of Stencil's own unique set of components (rather than the Catalyst theme components described above).
