@@ -116,7 +116,7 @@ pnpm run dev
 
 _The pnpm command is unrecognized._
 
-In some environments where file permissions are highly restricted, you may need to prepend `corepack` to the use of `pnpm` commands (for example, `corepack pnpm dlx create-next-app@latest ...`)
+In some environments where file permissions are highly restricted, you may need to prepend `corepack` to the use of `pnpm` commands (for example, `corepack pnpm run dev`)
 
 3. **Browse** to the URL displayed in the command line output. (Usually `http://localhost:3000`)
 
@@ -145,6 +145,7 @@ npm install -g corepack@latest
 | Variable | Description |
 | --- | --- |
 | `AUTH_SECRET` | A secret value used for Auth.js authenticated session management |
+| `CATALYST_ACCESS_TOKEN` | A BigCommerce REST API token generated during the device auth flow, used exclusively by the Catalyst CLI (for example, to authorize commands like *channel link*) |
 | `BIGCOMMERCE_STORE_HASH` | The hash of the BigCommerce store this project is connected to |
 | `BIGCOMMERCE_CHANNEL_ID` | The ID of the new storefront channel that was created in your store. This new channel has the type "storefront" and the platform "catalyst". |
 | `BIGCOMMERCE_STOREFRONT_TOKEN` | The private [GraphQL Storefront API token](https://docs.bigcommerce.com/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/private-api-token/create-private-token) that Catalyst uses for its interactions with the BigCommerce platform. |
@@ -153,23 +154,18 @@ npm install -g corepack@latest
 | `TURBO_REMOTE_CACHE_SIGNATURE_KEY` | A key related to Turborepo, a tool used by Catalyst for optimizing building within the monorepo |
 | `MAKESWIFT_SITE_API_KEY` | The API key of the Makeswift dev site |
 
-2. **Browse** to the file `.catalyst` in your project and **observe** the variables created here.
+Unlike most of the other values in `.env.local`, `CATALYST_ACCESS_TOKEN` is only used by the CLI itself — for example, to authorize commands like `channel link` — and is never read by the storefront application at build time or runtime. Because of this, it does not need to be set in any deployment environment.
 
-| Variable | Description |
-| --- | --- |
-| `storeHash` | The same store hash stored in `.env.local` |
-| `accessToken` | A BigCommerce REST API token generated during the device auth flow |
+`CATALYST_ACCESS_TOKEN` is separate from the optional `BIGCOMMERCE_ACCESS_TOKEN` variable. `BIGCOMMERCE_ACCESS_TOKEN` can be scoped independently of the CLI's own authorization, and is used by the storefront application at runtime for certain features that require REST API access.
 
-Unlike the values in `.env.local`, the values in `.catalyst` are only used by the CLI installer, not by the storefront application itself, and so these values do not correspond to any environment configuration that must be set up in deployment environments.
-
-3. **Browse** to the `/admin` path on your local storefront to visit your BigCommerce control panel.
+2. **Browse** to the `/admin` path on your local storefront to visit your BigCommerce control panel.
 
 ## The Local Dev Server and Cache
 
 At various points while working in your local project, you may need to restart your dev server or clear the Next.js or Turborepo caches. Below is an example set of steps to do all three.
 
 1. **Stop** the local dev server (CTRL-C at the command line).
-2. **Clear** the contents of the Next.js cache directory. This is located at `core/.next/cache` in your project working directory.
+2. **Clear** the contents of the Next.js cache directory. This is located at `.next/cache` in your project working directory.
 3. **Clear** the contents of the Turborepo cache directory. This is located at `.turbo/cache` in your project working directory.
 4. **Start** the dev server again.
 
