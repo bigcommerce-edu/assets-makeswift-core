@@ -12,6 +12,6 @@ No CLI install step is required — provisioning happens entirely through the co
 
 Key facts for this integration:
 
-* Custom React components are not supported on Stencil (to be supported at a later date). Editing is limited to Makeswift's built-in controls and BigCommerce-provided components.
+* Custom React components are not supported on Stencil. Custom Makeswift components for a Stencil theme are configured through the Widgets API instead (see the Widgets REST API course).
 * The integration ships its own set of Stencil-specific components (e.g. products, product lists) that render with the theme's own markup/styling.
 * Under the hood: a BigCommerce back-end proxy service renders the page HTML with the appropriate renderer, detects the theme's regions, and injects React tooling into those regions before the HTML reaches the browser — which is what makes a non-React, Handlebars-based storefront editable in Makeswift.
